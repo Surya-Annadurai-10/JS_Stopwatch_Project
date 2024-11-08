@@ -6,43 +6,49 @@
 }
 
 body{
-    background-image: url('https://plus.unsplash.com/premium_photo-1730241097496-11193c5b4d42?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1MTN8fHxlbnwwfHx8fHw%3D');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom;
+    background-color: rgb(0, 0, 0);
 }
 
 header{
     width: 100%;
-    height: 10vh;
-    /* background-color: yellow; */
-    text-align: center;
+    height: 20vh;
+display: grid;
+place-items: center;
     font-size: 2.2rem;
     color: white;
+   /* border-bottom: 1px solid white; */
 }
 
 
 .container{
     width: 100%;
-    height: 90vh;
-    /* display: grid;
-    place-items: center; */
-    /* background-color: pink; */
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+
+ 
 }
 
-.inside{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    flex-direction: column;
-}
-
-.inside .box{
-    padding: 1rem 2rem;
-    background-color: purple;
+.box > span{
+    width: 50px;
+    height: 50px;
     color: white;
-    font-size: 2rem;
+    font-size: 2.8rem;
+    
+}
+
+.boxes{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background-color: rgb(27, 26, 26);
+    margin: auto;
+    box-shadow: 0 0 50px red;
+    
 }
 
 .boxes,
@@ -50,17 +56,58 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* gap: 1rem; */
+ 
 }
 
 .button{
-    padding: 1rem 2rem;
-    background-color: red;
-    border:none;
-    font-size: 1.2rem;
-    border-radius: 25px;
+  
+    padding: 1.3rem 3rem;
+    background-color: rgb(40, 38, 38);
+    border: 1px solid rgb(108, 104, 104);
+    font-size: 1.5rem;
+    border-radius: 30px;
     color: white;
     margin: 0.5rem;
+    transform: scale(1);
+}
+
+.button:hover{
+    transform: scale(1.1);
+    transition: 0.2s ease-out;
+    box-shadow: 0 0 20px rgb(231, 1, 1);
+    border: 1px solid  rgb(40, 38, 38);
+}
+
+.laps{
+    width: 80%;
+    min-height: 10vh;
+    margin: auto;
+}
+
+.div-box{
+   
+    /* background-color: rgb(40, 38, 38); */
+color: white;
+font-size: 1.3rem;
+display: flex;
+align-items: center;
+/* justify-content: center; */
+gap:5rem;
+    width: 80%;
+    height: 50px;
+    margin: auto;
+    margin-top: 1rem;
 }
 
 
+.lap-num{
+    font-weight: bold;
+    font-size: 2rem;
+    color: red;
+text-shadow: 0 0 5px rgb(230, 13, 13);
+}
+
+
+.div-box  span{
+    font-size: 2rem;
+}
