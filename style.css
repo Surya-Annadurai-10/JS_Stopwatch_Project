@@ -16,6 +16,8 @@ display: grid;
 place-items: center;
     font-size: 2.2rem;
     color: white;
+    
+ 
    /* border-bottom: 1px solid white; */
 }
 
@@ -27,8 +29,10 @@ place-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 2rem;
-
- 
+ background-color: #000;
+position: sticky;
+padding-top: 2rem;
+top: 0;
 }
 
 .box > span{
